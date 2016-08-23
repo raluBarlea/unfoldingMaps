@@ -87,8 +87,7 @@ public class EarthquakeCityMap extends PApplet {
 			 result = country.compareTo(airports[mid].getCountry());
 			 //if result is less than 0 that means that country is before mid
 			 if(result < 0 ){
-				 high = mid-1;
-				 
+				 high = mid-1; 
 			 }else if(result > 0 ){
 				 low = mid+1;
 				 
@@ -97,6 +96,12 @@ public class EarthquakeCityMap extends PApplet {
 				 return airports[mid].getCode();
 			 }
 		}
+	}
+	public static void selectioSort(int[] vals){
+	
+//		for(int i=0;i<=vals.length-1;i++){
+//			if()
+//		}
 	}
 	public void setup() {		
 		// (1) Initializing canvas and map tiles
