@@ -65,38 +65,38 @@ public class EarthquakeCityMap extends PApplet {
 	static int index;
 	int code;
 	//liniar search
-	public static String search(String country){
-		int index = 0;
-		while(index < airports.length){
-			Airport a = airports[index];
-			if((a.getCountry()).equals(country) ){
-				 return a.getCode();
-			}
-			index++;
-		}
-		//coudn't find it
-		return null;
-		
-	}
-	public String  binarySearch(String country,Airport[] airports){
-		int low=0;
-		int high = airports.length;
-		int mid,result;
-		while(low > high){
-			 mid = (low+high)/2;
-			 result = country.compareTo(airports[mid].getCountry());
-			 //if result is less than 0 that means that country is before mid
-			 if(result < 0 ){
-				 high = mid-1; 
-			 }else if(result > 0 ){
-				 low = mid+1;
-				 
-			 }else
-			 {
-				 return airports[mid].getCode();
-			 }
-		}
-	}
+//	public static String search(String country){
+//		int index = 0;
+//		while(index < airports.length){
+//			Airport a = airports[index];
+//			if((a.getCountry()).equals(country) ){
+//				 return a.getCode();
+//			}
+//			index++;
+//		}
+//		//coudn't find it
+//		return null;
+//		
+//	}
+//	public String  binarySearch(String country,Airport[] airports){
+//		int low=0;
+//		int high = airports.length;
+//		int mid,result;
+//		while(low > high){
+//			 mid = (low+high)/2;
+//			 result = country.compareTo(airports[mid].getCountry());
+//			 //if result is less than 0 that means that country is before mid
+//			 if(result < 0 ){
+//				 high = mid-1; 
+//			 }else if(result > 0 ){
+//				 low = mid+1;
+//				 
+//			 }else
+//			 {
+//				 return airports[mid].getCode();
+//			 }
+//		}
+//	}
 	public static void selectioSort(int[] vals){
 	
 //		for(int i=0;i<=vals.length-1;i++){
